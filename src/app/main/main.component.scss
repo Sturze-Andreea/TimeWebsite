@@ -1,0 +1,147 @@
+/* General Styles */
+.time-container {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background: url("../../../public/assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+p,
+li {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #00e676;
+  margin-bottom: 10px;
+}
+
+/* Section Styles */
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  max-width: 350px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.section h2 {
+  text-align: center;
+}
+
+.section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.quote-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.quote-list li {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.image-gallery img {
+  width: 100px;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Clock Styles */
+.clock {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.clock .center {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock .hour,
+.clock .minute,
+.clock .second {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 50%;
+}
+
+.clock .hour {
+  width: 35%;
+  height: 4px;
+  background: #ff9800;
+}
+
+.clock .minute {
+  width: 45%;
+  background: #03a9f4;
+}
+
+.clock .second {
+  width: 50%;
+  height: 1px;
+  background: #f44336;
+}
